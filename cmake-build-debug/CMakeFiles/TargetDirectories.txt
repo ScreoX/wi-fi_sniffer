@@ -1,0 +1,3 @@
+D:/InternShip/Tasks/sniffer/cmake-build-debug/CMakeFiles/sniffer.dir
+D:/InternShip/Tasks/sniffer/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/InternShip/Tasks/sniffer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
