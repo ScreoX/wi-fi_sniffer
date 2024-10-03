@@ -28,8 +28,6 @@ public:
         return parseResult;
     }
 
-
-
 private:
 
     std::vector<std::string> macAddresses;
