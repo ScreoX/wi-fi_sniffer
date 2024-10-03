@@ -1,3 +1,13 @@
 # ninja log v5
-0	553	7495919281734840	CMakeFiles/sniffer.dir/main.cpp.obj	f719921e9d50bf3
-561	711	7495919283264864	sniffer.exe	9160867484b209a9
+2	1363	7496519006316470	CMakeFiles/sniffer.dir/main.cpp.obj	f719921e9d50bf3
+4	3828	7496575439015104	CMakeFiles/snifferTest.dir/test.cpp.obj	bf764234028c6b9d
+1364	2147	7496519013813785	sniffer.exe	c4404bbb9a616044
+7	11895	7496518466257215	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b8388810eff50e63
+3829	7704	7496575477634479	snifferTest.exe	a29d4cc2cf81a94f
+1	765	7496577185266246	build.ninja	bad27f0f6a4e8ae7
+10	2475	7496518372278954	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	39dcac3ebc5bd1a1
+11897	16271	7496518510172339	lib/libgtest.a	d09f17770a671eeb
+16271	16365	7496518511144128	lib/libgtest_main.a	71cd6884e24ee5f6
+1	503	7496577185266246	build.ninja	bad27f0f6a4e8ae7
+3	1907	7496577205083393	CMakeFiles/snifferTest.dir/test.cpp.obj	bf764234028c6b9d
+1908	5520	7496577241073203	snifferTest.exe	a29d4cc2cf81a94f
