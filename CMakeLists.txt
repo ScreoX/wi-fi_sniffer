@@ -13,7 +13,7 @@ FetchContent_MakeAvailable(googletest)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(sniffer parser.cpp)
+add_executable(sniffer general.cpp)
 
 add_executable(snifferTest test.cpp)
 

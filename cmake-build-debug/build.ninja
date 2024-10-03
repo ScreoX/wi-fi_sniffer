@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/InternShip/Tasks/sniffer/cmake-build-debug/
 
 build cmake_object_order_depends_target_sniffer: phony || CMakeFiles/sniffer.dir
 
-build CMakeFiles/sniffer.dir/parser.cpp.obj: CXX_COMPILER__sniffer_unscanned_Debug D$:/InternShip/Tasks/sniffer/parser.cpp || cmake_object_order_depends_target_sniffer
-  DEP_FILE = CMakeFiles\sniffer.dir\parser.cpp.obj.d
+build CMakeFiles/sniffer.dir/general.cpp.obj: CXX_COMPILER__sniffer_unscanned_Debug D$:/InternShip/Tasks/sniffer/general.cpp || cmake_object_order_depends_target_sniffer
+  DEP_FILE = CMakeFiles\sniffer.dir\general.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\sniffer.dir
   OBJECT_FILE_DIR = CMakeFiles\sniffer.dir
@@ -63,7 +63,7 @@ build CMakeFiles/sniffer.dir/parser.cpp.obj: CXX_COMPILER__sniffer_unscanned_Deb
 #############################################
 # Link the executable sniffer.exe
 
-build sniffer.exe: CXX_EXECUTABLE_LINKER__sniffer_Debug CMakeFiles/sniffer.dir/parser.cpp.obj
+build sniffer.exe: CXX_EXECUTABLE_LINKER__sniffer_Debug CMakeFiles/sniffer.dir/general.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
