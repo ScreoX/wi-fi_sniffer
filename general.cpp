@@ -13,15 +13,15 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    std::vector<std::string> macAddresses = {"RA", "TA", "SA"};
+    const std::vector<std::string> macAddresses = {"RA", "TA", "SA"};
 
-    Parser parser = *new Parser(macAddresses);
+    Parser parser(macAddresses);
 
     parser.parseFile(inputFile);
 
-    std::vector<std::pair<std::string , int>> result = parser.saveResult();
+    const std::vector<std::pair<std::string, int>> result = parser.saveResult();
 
-    for (auto& frame : result) {
+    for (const auto& frame : result) {
         std::cout << frame.first << " " << frame.second << '\n';
     }
 

@@ -7,19 +7,17 @@
 class Parser {
 
 public:
-    explicit Parser(std::vector<std::string>& inputMacAddresses) : macAddresses(inputMacAddresses) {}
+    explicit Parser(const std::vector<std::string>& inputMacAddresses) : macAddresses(inputMacAddresses) {}
 
     void parseFile(std::ifstream& file) {
-
         std::string tempLine;
-
         while(std::getline(file, tempLine)) {
             parseLine(tempLine);
         }
     }
 
-    std::vector<std::pair<std::string , int>> saveResult() {
-        std::vector<std::pair<std::string , int>> parseResult(counterMacAddresses.begin(), counterMacAddresses.end());
+    std::vector<std::pair<std::string, int>> saveResult() const {
+        std::vector<std::pair<std::string, int>> parseResult(counterMacAddresses.begin(), counterMacAddresses.end());
 
         std::sort(parseResult.begin(), parseResult.end(), [](const std::pair<std::string, int>& a, const std::pair<std::string, int>& b) {
             return a.second > b.second;
@@ -29,12 +27,10 @@ public:
     }
 
 private:
-
-    std::vector<std::string> macAddresses;
+    const std::vector<std::string> macAddresses;
     std::unordered_map<std::string, int> counterMacAddresses;
 
-    void parseLine(std::string& line) {
-
+    void parseLine(const std::string& line) {
         for (const std::string& mac : macAddresses) {
             size_t index_mac = line.find(mac);
             if (index_mac != std::string::npos) {

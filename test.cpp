@@ -4,15 +4,15 @@
 TEST(ParserTest, SuccessResult) {
     std::ifstream inputFile("testFile.log");
 
-    std::vector<std::string> macAddresses = {"RA", "TA", "SA"};
+    const std::vector<std::string> macAddresses = {"RA", "TA", "SA"};
 
-    Parser parser = *new Parser(macAddresses);
+    Parser parser(macAddresses);
 
     parser.parseFile(inputFile);
 
-    std::vector<std::pair<std::string, int>> result = parser.saveResult();
+    const std::vector<std::pair<std::string, int>> result = parser.saveResult();
 
-    std::vector<std::pair<std::string, int>> expectedResult = {
+    const std::vector<std::pair<std::string, int>> expectedResult = {
             {"b8:69:f4:7a:a5:ac", 7966},
             {"34:1c:f0:d3:40:a2", 7901},
             {"34:1c:f0:d2:78:5a", 7184},
@@ -24,7 +24,7 @@ TEST(ParserTest, SuccessResult) {
             {"84:c5:a6:07:38:66", 28},
     };
 
-    EXPECT_EQ(parser.saveResult(), expectedResult);
+    EXPECT_EQ(result, expectedResult);
 }
 
 int main(int argc, char **argv) {
